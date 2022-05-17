@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECIDIR NOME</title>
+    <script src="https://kit.fontawesome.com/5fc76a731d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="vconessafinancas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="C:\Users\vcone\.vscode\imagens\Play-removebg-preview.png" width="50%" alt="logo">
+        </div>
+        <ul>
+            <li><a target="_blanck" href="https://github.com/vconessa"><img src="C:\Users\vcone\.vscode\imagens\githubtirarfundo-removebg-preview.png" width="60%" alt=""></a></li>
+            <li><a target="_blanck" href="mailto:vconessa@hotmail.com"><img src="C:\Users\vcone\.vscode\imagens\email_tirar_fundo-removebg-preview.png" width="60%" alt=""></a></li>
+            <li><a target="_blanck" href="https://wa.me/19998128199"><img src="C:\Users\vcone\.vscode\imagens\c-whatsapp-go-totirarfundo-removebg-preview.png" width="60%" alt=""></a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h2>VINICIUS CONESSA</h2>
+                <h5>@vconessa</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div style="display:none" id="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae et eius omnis numquam veniam possimus ipsum. Adipisci alias explicabo ullam mollitia excepturi harum quibusdam, beatae quidem quae enim porro!</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Se junte a nós!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="e-mail">
+                    <button>ENVIAR</button>
+                </form>
+
+
+            </div>
+        </section>
+             
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
